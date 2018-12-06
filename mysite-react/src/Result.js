@@ -14,23 +14,21 @@ class Result extends Component {
 
     return (
       <div>
-        <h1>{this.props.author}님과의 호불호 일치도입니다!</h1>
-        <div className="text-center">
-          <span className="display-1">{score}</span>점<br />
-          <span className="display-6">총 {qcount}개 중 {correct}개 일치</span>
+        <h3 className="margin-bottom-zero">{this.props.author}님과의 호불호 일치도입니다!</h3>
+        <div>
+          <span className="text-large">{score}</span>점
+          <br />
+          총 {qcount}개 중 {correct}개 일치
         </div>
-
         <hr />
-
-        <h3>
+        <div>
           {this.props.user}님:&nbsp;
           {this.props.userAnswer.map(
             (x, i) => <Answer key={i} {...x} />
           )}
-        </h3>
-
+        </div>
         <div>
-          <input className="btn btn-primary" type="button" value="다시하기!"
+          <input className="btn-primary" type="button" value="다시하기"
             onClick={this.props.reset} />
         </div>
       </div>

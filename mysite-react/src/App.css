@@ -1,32 +1,119 @@
-.App {
+.app-container {
+  margin: 50px auto 0px;
+  padding: 30px 0px;
+  width: 600px;
+  height: auto;
+  border-style: none;
+  border-radius: 5px;
+  background-color: whitesmoke;
   text-align: center;
+  font-size: x-large;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.btn-primary {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: large;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-primary:hover {
+  box-shadow: 0px 0px 10px dodgerblue;
+}
+
+.btn-primary:active {
+  background-color: royalblue;
+  box-shadow: 0px 0px 10px royalblue;
+}
+
+.btn-like {
+  margin-right: 5px;
+  width: 150px;
+  height: 40px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: mediumseagreen;
+  color: white;
+  font-size: 100%;
+}
+
+.btn-like:hover {
+  box-shadow: 0px 0px 10px mediumseagreen;
+}
+
+.btn-dislike {
+  width: 150px;
+  height: 40px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: tomato;
+  color: white;
+  font-size: 100%;
+}
+
+.btn-dislike:hover {
+  box-shadow: 0px 0px 10px tomato;
+}
+
+.text-small {
+  font-size: medium;
+}
+
+.text-large {
+  font-size: 500%;
+}
+
+.float-left {
+  margin-left: 50px;
+  float: left;
+}
+
+.float-right {
+  margin-right: 50px;
+  float: right;
+}
+
+.margin-top-zero {
+  margin-top: 0px;
+}
+
+.margin-bottom-zero {
+  margin-bottom: 0px;
+}
+
+.inline-block {
+  display: inline-block;
+  height: 40px;
+}
+
+.like {
+  padding: 0px 5px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: mediumseagreen;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dislike {
+  padding: 0px 5px;
+  border-style: none;
+  border-radius: 3px;
+  background-color: tomato;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#username {
+  margin-top: 20px;
+  width: 400px;
+  height: 40px;
+  border-style: none;
+  border-radius: 3px;
+  font-size: 100%;
+}
+
+#username:focus {
+  box-shadow: 0px 0px 10px dodgerblue;
 }

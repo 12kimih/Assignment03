@@ -12,18 +12,15 @@ class Question extends Component {
 
     return (
       <div>
-        <div className="row">
-          <div className="col">
-            {this.props.author}
-          </div>
-          <div className="col text-right">
-            {this.props.qindex+1} / {this.props.qcount}
-          </div>
+        <div className="text-small">
+        <span className="float-left">{this.props.author}</span>
+        <span className="float-right">{this.props.qindex+1} / {this.props.qcount}</span>
         </div>
-        <h1>{this.props.subject}?</h1>
-        <input className="btn btn-lg btn-success btn-block" type="button" value="호"
+        <br />
+        <h3 className="margin-top-zero">{this.props.subject}</h3>
+        <input className="btn-like" type="button" value="호"
           onClick={this.answer.bind(this,"like")} />
-        <input className="btn btn-lg btn-danger btn-block" type="button" value="불호"
+        <input className="btn-dislike" type="button" value="불호"
           onClick={this.answer.bind(this,"dislike")} />
       </div>
     );

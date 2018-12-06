@@ -2,18 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import SearchUser from './SearchUser'
-import HobulhoAppContainer from './AppContainer';
+import AppContainer from './AppContainer';
 import * as serviceWorker from './serviceWorker';
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 
 class App extends React.Component {
   render() {
     return (
-      <div className="app-container jumbotron container">
+      <div className="app-container">
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={SearchUser} />
-            <Route path="/:name" component={HobulhoAppContainer} />
+            <Route path="/:name" component={AppContainer} />
           </Switch>
         </BrowserRouter>
       </div>

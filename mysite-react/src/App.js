@@ -46,9 +46,8 @@ class HobulhoApp extends Component {
     } else if (!qcount) {
       return (
         <div>
-          <h1>{this.props.author}님은 호불호를 등록하지 않았습니다.</h1>
-          <hr />
-          <button className="btn btn-primary"
+          <h3>{this.props.author}님은 호불호를 등록하지 않았습니다.</h3>
+          <button className="btn-primary"
             onClick={() => {
               this.setState({ redirect: <Redirect to="/" /> });
             }}>
@@ -59,11 +58,11 @@ class HobulhoApp extends Component {
     } else if (!this.state.user) {
       return (
         <div>
-          <h1>{this.props.author}님의 호불호를 알아보아요!</h1>
+          <h3>{this.props.author}님의 호불호를 알아보아요!</h3>
           <hr />
           <InputName
             label="당신의 이름을 입력해주세요."
-            actionName="시작하기!"
+            actionName="시작하기"
             handleUserName={this.handleUserName.bind(this)} />
         </div>
       );

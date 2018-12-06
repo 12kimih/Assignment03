@@ -11,7 +11,7 @@ class SearchUser extends Component {
   render() {
     return this.state.redirect || <InputName
       label="호불호를 알아볼 사용자의 이름을 적어주세요."
-      actionName="시작하기!"
+      actionName="시작하기"
       handleUserName={(name) => {
         this.setState({ redirect: <Redirect to={`/${name}`} /> });
       }} />

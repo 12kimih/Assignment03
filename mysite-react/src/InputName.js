@@ -12,14 +12,14 @@ class InputName extends Component {
     return (
       <div>
         <form onSubmit={() => this.props.handleUserName(this.state.name)}>
-          <div className="form-group">
-            <label for="username">{this.props.label}</label>
-            <input id="username" className="form-control" type="text" required
+          <div>
+            <label for="username">{this.props.label}</label><br />
+            <input id="username" type="text" required
               value={this.state.name}
               onChange={(evt) => this.setState({name: evt.target.value})} />
           </div>
-          <input className="btn btn-primary" type="submit"
-            value={this.props.actionName || "제출"} />
+          <input className="btn-primary" type="submit"
+            value={this.props.actionName || "제출하기"} />
         </form>
       </div>
     );
